@@ -2,7 +2,8 @@
 import React from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
-
+const [Lions, setValue] = useState(); // Give these better names, and decide whether you want to pass an initial score into the state hook as the initialValu
+const [Tigers, setValue] = useState(); // Give these better names, and decide whether you want to pass an initial score into the state hook as the initialValu
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
 
