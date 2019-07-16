@@ -4,6 +4,7 @@ import "./App.css";
 const BottomRow = () => {
   const [quarter, setQuarter] = useState(1); // Give these better names, and decide whether you want to pass an initial score into the state hook as the initialValu
   const [down, setDown] = useState(1); // Give these better names, and decide whether you want to pass an initial score into the state hook as the initialValu
+  const [ball, setBall] = useState(1); // Give these better names, and decide whether you want to pass an initial score into the state hook as the initialValu
 
   return (
     <div className="bottomRow">
@@ -17,7 +18,7 @@ const BottomRow = () => {
       </div>
       <div className="ballOn">
         <h3 className="ballOn__title">Ball on</h3>
-        <div className="ballOn__value">21</div>
+        <div onClick={ ()=> setBall(  ( (1 + ball ) % 99) )   } className="ballOn__value">{ball == 0 ? -1 : ball > 50 ? -(100 - ball) : ball}</div>
       </div>
       <div className="quarter">
         <h3 className="quarter__title">Quarter</h3>
