@@ -11,7 +11,7 @@ const BottomRow = () => {
     <div className="bottomRow">
       <div className="down">
         <h3 className="down__title">Down</h3>
-        <div onClick={ ()=> setDown(  ( (1 + down ) % 8) ) } className="down__value">{down == 0 ? -1 : down > 4 ? (down - 9) : down}</div>
+        <div onClick={ ()=> setDown(  ( (1 + down ) % 8) ) } className="down__value">{down == 0 ? -4 : down > 4 ? -(down - 4) : down}</div>
       </div>
       <div className="toGo">
         <h3 className="toGo__title">To Go</h3>
